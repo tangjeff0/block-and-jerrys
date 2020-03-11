@@ -4,23 +4,24 @@
    https://github.com/robertDurst/blockandjerrys
 */
 
+import doge_food from '../assets/doge-food.png'
+import vitalik_garcia from '../assets/vitalik-garcia.png'
+import half_baked from '../assets/half-baked.png'
+
 export default [
   {
     id: 1,
-    img_url: 'https://s26.postimg.org/wrz8s8sv9/Doge_Food_Pint.png',
-    img_logo: 'https://s26.postimg.org/61xk1ayg9/Doge_Food.png',
+    img_url: doge_food,
     flavor: 'Doge Food',
   },
   {
     id: 2,
-    img_url: 'https://s26.postimg.org/nix2ip4px/Vitalik_Garcia_Pint.png',
-    img_logo: 'https://s26.postimg.org/qm2dzslx5/Vitalik_Garcia.png',
+    img_url: vitalik_garcia,
     flavor: 'Vitalik Garcia',
   },
   {
     id: 3,
-    img_url: 'https://s26.postimg.org/4ql7f4g1h/Segwit2x_Pint.png',
-    img_logo: 'https://s26.postimg.org/cfmn4jvmh/Segwit2x.png',
+    img_url: half_baked,
     flavor: 'Segwit2x',
   },
 ];

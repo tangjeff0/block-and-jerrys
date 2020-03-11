@@ -1,10 +1,13 @@
+import menu from './utils/menu'
+// console.log(menu);
+
 const initialState = {
   socket: null,
-  coneCount: 'loading cones...',
-  cart: [],
+  coneCount: 'many',
+  cart: menu.map(x => ({ quantity: 0, priceBtc: 0.003, ...x })),
   cartTotal: 0,
   quantity: 0,
-  btcPrice: 0,
+  btcPrice: 9000,
   name: '',
   address: '',
   phone: '',
@@ -26,7 +29,7 @@ export default function (state = initialState, action) {
         socket,
         coneCount,
         cart: cartOrder,
-        btcPrice,
+        // btcPrice,
       };
     }
     case 'OPEN': {

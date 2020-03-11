@@ -12,6 +12,7 @@ import { connect } from 'react-redux';
 import ioClient from 'socket.io-client';
 
 import logo from '../assets/logo.png';
+import coindeskLogo from  '../assets/coindesk-logo.svg';
 import Cart from './cart';
 import Gallery from './gallery';
 import coneImg from '../assets/ice-cream-cone.png';
@@ -23,12 +24,12 @@ class App extends React.Component {
     url += ':5000';
     const socket = ioClient(url);
     console.log('Connected to socket at', url);
-    socket.on('INIT', async ({ coneCount, cart, btcPrice }) => {
-      cart.forEach((x, i) => {
-        cart[i].priceBtc = cart[i].price / btcPrice;
-      });
-      this.props.handleInit({ socket, coneCount, cart, btcPrice });
-    });
+    // socket.on('INIT', async ({ coneCount, cart, btcPrice }) => {
+    //   cart.forEach((x, i) => {
+    //     cart[i].priceBtc = cart[i].price / btcPrice;
+    //   });
+    //   this.props.handleInit({ socket, coneCount, cart, btcPrice });
+    // });
   }
   render() {
     return (

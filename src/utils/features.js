@@ -1,6 +1,6 @@
 export default [
   {
-    src: 'https://www.coindesk.com/wp-content/themes/coindesk2/images/header-logo-new.png',
+    src: 'https://static.coindesk.com/static/images/logo-5ce6d3185603319740c3c34bbf2ec628.svg',
     alt: 'coindesk',
     href: 'https://www.coindesk.com/bitcoin-lightning-risky-maybe-ice-cream-will-tempt/',
   },
